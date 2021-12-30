@@ -1,0 +1,88 @@
+body {
+  background-color: #f9f9f9;
+}
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.navbar-links {
+  font-size: 18px;
+  font-weight: 500;
+}
+.text-font-15 {
+  font-size: 15px;
+}
+.the-world {
+  font-family: Brush Script MT;
+  font-style: normal;
+  font-size: 36px;
+}
+.btn-login {
+  background-color: #7ad86d;
+}
+.signup-btn {
+  background-color: #fffa75;
+}
+.discover-btn {
+  background-color: #fffa75;
+  border-radius: 50px;
+  border-color: #fffa75;
+  border-style: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.discover-btn:hover {
+  background-color: #f3f1bc;
+  color: #000;
+}
+.little-text {
+  font-size: 14px;
+}
+.read-btn {
+  background-color: #fffa75;
+  color: #000;
+  border-radius: 50px;
+  border-style: none;
+  font-weight: 400;
+}
+.read-btn:hover {
+  background-color: #f3f1bc;
+  color: #000;
+}
+.the-radius {
+  border-radius: 15px;
+}
+.img-radi {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+@media (max-width: 576px) {
+  .the-wrapper {
+    width: auto;
+  }
+  .the-radius {
+    margin-left: 0;
+  }
+}
+@media (max-width: 415px) {
+  .card-holder {
+    width: auto;
+  }
+}
+@media (max-width: 320px) {
+  .the-wrapper {
+    width: 100%;
+  }
+  .the-radius {
+    margin-left: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 280px) {
+  .the-radius {
+    margin-left: 0;
+  }
+}
