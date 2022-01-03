@@ -91,7 +91,7 @@
                     style="border-radius: 20;"
                     id="signup"
                   >
-                    SignUp
+                    Sign Up
                   </button>
               </div>
             </form>
@@ -113,13 +113,13 @@
     if(document.getElementById("fname-box").value==""||document.getElementById("lname-box").value==""||document.getElementById("email-box").value==""||document.getElementById("sign-pass-box").value=="")alert("Please Provide Invalid Information");
    
     else if(document.getElementById("sign-pass-box").value.length<6){
-      alert("Password Must Be 6 Characters")
+      alert("Password must be 6 characters")
     }
     else if(!document.getElementById("exampleCheck1").checked){
-      alert("You Must Agree To The Terms");
+      alert("You must agree to the terms");
     }
     else if(document.getElementById("sign-pass-box").value!==document.getElementById("sign-pass-box-confirm").value){
-     alert("Password Doesn't Much");
+     alert("Passwords don't match!");
     }
     else{
 localStorage.setItem("infinityUser",JSON.stringify(user));

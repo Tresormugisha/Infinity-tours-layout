@@ -26,7 +26,7 @@
                     type="text"
                     id="login-username"
                     class="form-control rounded no-shadow"
-                    placeholder="Username"
+                    placeholder="E-mail"
                   />
                 </div>
               </div>
@@ -53,6 +53,7 @@
                     Login
                   </button>
               </div>
+              <span class="text-secondary mt-3">Don't have an account? <a href="./signup.html">SignUp</a></span>
             </form>
             <div style="height: 100px;"></div>
           </div>
@@ -60,7 +61,7 @@
       </div>
 </body>
 <script >
-  const login =document.getElementById("login");
+const login =document.getElementById("login");
 const email=document.getElementById("login-username");
 const password=document.getElementById("login-password");
 
@@ -70,9 +71,10 @@ const password=document.getElementById("login-password");
   const username=email.value  
   const pass=password.value
   const userdata=JSON.parse(localStorage.getItem("infinityUser"));
-  console.log(username!=userdata.email)
+  console.log("Hello");
+  if(userdata == null) alert("Invalid credentials");
   if(username!=userdata.email&&pass!=userdata.password){
-    alert("Invalid Credetials")
+    alert("Invalid Credentials!")
  }else{
   location.replace("index.html") 
  }
