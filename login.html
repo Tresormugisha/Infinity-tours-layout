@@ -10,9 +10,7 @@
     <link rel="icon" href="./infinity logo 2.png">
     <title>Infinity Tours - An International Tourism Agency</title>
 </head>
-<script>
 
-</script>
 <body>
     <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
@@ -39,6 +37,7 @@
                     id="login-password"
                     class="form-control my-pwd-input rounded no-shadow"
                     placeholder="Password"
+                    value=""
                   />
                   <div class="input-group-append">
                   </div>
@@ -49,6 +48,7 @@
                     type="button"
                     class="form-control btn px-5 mt-2 submit-btn"
                     style="border-radius: 20;"
+                    id="login"
                   >
                     Login
                   </button>
@@ -59,4 +59,24 @@
         </div>
       </div>
 </body>
+<script >
+  const login =document.getElementById("login");
+const email=document.getElementById("login-username");
+const password=document.getElementById("login-password");
+
+
+ async function userLogin(e){
+  e.preventDefault();
+  const username=email.value  
+  const pass=password.value
+  const userdata=JSON.parse(localStorage.getItem("infinityUser"));
+  console.log(username!=userdata.email)
+  if(username!=userdata.email&&pass!=userdata.password){
+    alert("Invalid Credetials")
+ }else{
+  location.replace("index.html") 
+ }
+}
+login.addEventListener("click",userLogin);
+</script>
 </html>
